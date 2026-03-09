@@ -1,0 +1,27 @@
+{
+  "name": "create-nix-app",
+  "version": "1.0.0",
+  "description": "Scaffolding tool for Nix.js reactive micro-framework",
+  "type": "module",
+  "bin": {
+    "create-nix-app": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "nix",
+    "nix.js",
+    "framework",
+    "reactive",
+    "cli",
+    "create-app",
+    "scaffolding"
+  ],
+  "author": "Tu Nombre o el de tu Empresa",
+  "license": "MIT",
+  "dependencies": {
+    "kolorist": "^1.8.0",
+    "prompts": "^2.4.2"
+  }
+}

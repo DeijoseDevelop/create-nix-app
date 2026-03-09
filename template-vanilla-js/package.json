@@ -1,0 +1,8 @@
+{
+    "name": "nix-vanilla-js",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "npx serve ."
+    }
+}

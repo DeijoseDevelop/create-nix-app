@@ -1,0 +1,15 @@
+{
+    "name": "nix-vanilla-ts",
+    "version": "1.0.0",
+    "type": "module",
+    "scripts": {
+        "dev": "tsc --watch & npx serve .",
+        "build": "tsc"
+    },
+    "dependencies": {
+        "@deijose/nix-js": "^1.1.3"
+    },
+    "devDependencies": {
+        "typescript": "~5.9.3"
+    }
+}
