@@ -1,6 +1,6 @@
 {
   "name": "create-nix-app",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Scaffolding tool for Nix.js reactive micro-framework",
   "type": "module",
   "bin": {
@@ -18,7 +18,7 @@
     "create-app",
     "scaffolding"
   ],
-  "author": "Tu Nombre o el de tu Empresa",
+  "author": "Deiver Vasquez",
   "license": "MIT",
   "dependencies": {
     "kolorist": "^1.8.0",
