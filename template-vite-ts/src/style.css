@@ -33,7 +33,18 @@ h1 {
   line-height: 1.1;
   background: linear-gradient(45deg, #646cff, #60efff);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+}
+
+h1 img {
+  height: 1.2em;
+  width: auto;
+  filter: drop-shadow(0 0 10px rgba(100, 108, 255, 0.4));
 }
 
 button {

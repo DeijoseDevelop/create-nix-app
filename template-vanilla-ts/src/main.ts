@@ -6,7 +6,7 @@ function App(): NixTemplate {
 
     return html`
         <main>
-            <h1>❄️ Nix.js + TypeScript</h1>
+            <h1><img src="/nix-js-logo.png" alt="Nix.js Logo" /> Nix.js + TypeScript</h1>
             <button @click=${() => count.update((c: number) => c + 1)}>
                 Clicks: ${() => count.value}
             </button>
