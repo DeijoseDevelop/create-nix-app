@@ -7,7 +7,7 @@
         "build": "tsc"
     },
     "dependencies": {
-        "@deijose/nix-js": "^1.7.3"
+        "@deijose/nix-js": "^1.7.5"
     },
     "devDependencies": {
         "typescript": "~5.9.3"
