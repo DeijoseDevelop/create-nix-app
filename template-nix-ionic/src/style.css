@@ -1,0 +1,21 @@
+/* App-level styles */
+:root {
+  --ion-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ion-card p {
+  color: var(--ion-color-medium);
+  margin-top: 8px;
+}
+
+ion-card code {
+  font-family: monospace;
+  background: var(--ion-color-light);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-size: 0.9em;
+}

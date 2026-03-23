@@ -1,0 +1,23 @@
+{
+  "name": "nix-ionic-app",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@capacitor/android": "^8.2.0",
+    "@capacitor/cli": "^8.2.0",
+    "@capacitor/core": "^8.2.0",
+    "@deijose/nix-ionic": "^0.3.0",
+    "@deijose/nix-js": "^1.7.7",
+    "@ionic/core": "^8.8.1",
+    "ionicons": "^8.0.13"
+  },
+  "devDependencies": {
+    "typescript": "~5.9.3",
+    "vite": "^8.0.0"
+  }
+}
