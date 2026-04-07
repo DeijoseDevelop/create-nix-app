@@ -11,8 +11,8 @@
     "@capacitor/android": "^8.2.0",
     "@capacitor/cli": "^8.2.0",
     "@capacitor/core": "^8.2.0",
-    "@deijose/nix-ionic": "^0.3.1",
-    "@deijose/nix-js": "^1.7.7",
+    "@deijose/nix-ionic": "^0.3.3",
+    "@deijose/nix-js": "^1.8.1",
     "@ionic/core": "^8.8.1",
     "ionicons": "^8.0.13"
   },
