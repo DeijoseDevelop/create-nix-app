@@ -40,18 +40,33 @@ src/
 
 ## Modular Loading
 
-This template uses **nix-ionic v0.3.0** modular component loading.
+This template uses **nix-ionic v1.2.0** modular component loading.
 Import only the bundles your app needs in `main.ts`:
 
 ```ts
 import { layoutComponents } from "@deijose/nix-ionic/bundles/layout";
+import { navigationComponents } from "@deijose/nix-ionic/bundles/navigation";
 import { formComponents }   from "@deijose/nix-ionic/bundles/forms";
 import { overlayComponents } from "@deijose/nix-ionic/bundles/overlays";
+import { home, homeOutline } from "ionicons/icons";
 
-setupNixIonic({ components: [...layoutComponents, ...formComponents] });
+setupNixIonic({
+    components: [...layoutComponents, ...navigationComponents, ...formComponents],
+    icons: { home, "home-outline": homeOutline },
+});
 ```
 
 Available bundles: `layout`, `navigation`, `forms`, `lists`, `feedback`, `buttons`, `overlays`, `all`.
+
+## Tabs and Bottom Navigation
+
+For tab-based apps, use the built-in helper:
+
+```ts
+import { createBottomTabBar } from "@deijose/nix-ionic";
+```
+
+It provides active-path sync without manual `window.location` listeners.
 
 ## Learn More
 

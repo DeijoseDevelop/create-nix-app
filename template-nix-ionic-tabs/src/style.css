@@ -1,0 +1,37 @@
+:root {
+  --ion-font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", "Roboto", sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+ion-content {
+  --padding-bottom: 84px;
+}
+
+.app-tab-bar {
+  --background: #ffffff;
+  --color: var(--ion-color-medium);
+  --color-selected: var(--ion-color-primary);
+  border-top: 1px solid rgba(0, 0, 0, 0.08);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.06);
+}
+
+.app-tab-bar ion-tab-button.tab-active {
+  font-weight: 600;
+}
+
+.app-tab-bar ion-tab-button ion-icon {
+  font-size: 1.25rem;
+}
+
+.login-page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+ion-card {
+  border-radius: 16px;
+}

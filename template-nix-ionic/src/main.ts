@@ -11,18 +11,24 @@ import "./style.css";
 // 2. Framework
 import { NixComponent, html, mount } from "@deijose/nix-js";
 import { setupNixIonic, IonRouterOutlet } from "@deijose/nix-ionic";
+import { home, homeOutline } from "ionicons/icons";
 
 // 3. Modular component bundles — import only what your app needs
 import { layoutComponents } from "@deijose/nix-ionic/bundles/layout";
 import { formComponents } from "@deijose/nix-ionic/bundles/forms";
 import { listComponents } from "@deijose/nix-ionic/bundles/lists";
+import { navigationComponents } from "@deijose/nix-ionic/bundles/navigation";
 
 // 4. Pages
 import { HomePage } from "./pages/HomePage";
 
 // Register Ionic components
 setupNixIonic({
-  components: [...layoutComponents, ...formComponents, ...listComponents],
+  components: [...layoutComponents, ...formComponents, ...listComponents, ...navigationComponents],
+  icons: {
+    home,
+    "home-outline": homeOutline,
+  },
 });
 
 // 5. Router

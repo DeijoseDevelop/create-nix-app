@@ -25,6 +25,7 @@ async function init() {
                 { title: yellow('Vite + TypeScript'), value: 'vite-ts', description: 'Recomendado para DX rápida y tipado estricto' },
                 { title: yellow('Vite + JavaScript'), value: 'vite-js', description: 'Vite sin compilación de TS' },
                 { title: blue('Ionic + Nix.js (Capacitor)'), value: 'nix-ionic', description: 'Template oficial con nix-ionic (Nix.js + Ionic + Capacitor)' },
+                { title: blue('Ionic + Nix.js + Tabs'), value: 'nix-ionic-tabs', description: 'Template completo con IonRouterOutlet + createBottomTabBar + guards' },
                 { title: blue('Vanilla TypeScript'), value: 'vanilla-ts', description: 'Sin bundler, puro TSC' },
                 { title: blue('Vanilla JavaScript'), value: 'vanilla-js', description: 'Cero build, import maps directo en navegador' }
             ]
