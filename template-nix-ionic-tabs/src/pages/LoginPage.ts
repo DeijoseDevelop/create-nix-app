@@ -4,14 +4,14 @@ import type { PageContext } from "@deijose/nix-ionic";
 import { authStore } from "../stores/auth";
 
 export class LoginPage extends IonPage {
-  constructor(ctx: PageContext) {
-    super(ctx.lc);
-  }
+    constructor(ctx: PageContext) {
+        super(ctx.lc);
+    }
 
-  override render() {
-    const router = useRouter();
+    override render() {
+        const router = useRouter();
 
-    return html`
+        return html`
       <ion-header>
         <ion-toolbar>
           <ion-title>Login</ion-title>
@@ -30,7 +30,7 @@ export class LoginPage extends IonPage {
               @click=${() => {
                 authStore.login();
                 router.replace("/");
-              }}
+            }}
             >
               <ion-icon slot="start" name="log-in-outline"></ion-icon>
               Sign in
@@ -39,5 +39,5 @@ export class LoginPage extends IonPage {
         </ion-card>
       </ion-content>
     `;
-  }
+    }
 }

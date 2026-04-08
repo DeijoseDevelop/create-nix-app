@@ -3,15 +3,15 @@ import { IonPage, IonBackButton } from "@deijose/nix-ionic";
 import type { PageContext } from "@deijose/nix-ionic";
 
 export class RouteDetailPage extends IonPage {
-  private routeId: string;
+    private routeId: string;
 
-  constructor(ctx: PageContext) {
-    super(ctx.lc);
-    this.routeId = ctx.params.id ?? "unknown";
-  }
+    constructor(ctx: PageContext) {
+        super(ctx.lc);
+        this.routeId = ctx.params.id ?? "unknown";
+    }
 
-  override render() {
-    return html`
+    override render() {
+        return html`
       <ion-header>
         <ion-toolbar>
           <ion-buttons slot="start">${IonBackButton("/map")}</ion-buttons>
@@ -31,5 +31,5 @@ export class RouteDetailPage extends IonPage {
         </ion-card>
       </ion-content>
     `;
-  }
+    }
 }

@@ -4,15 +4,15 @@ import type { PageContext } from "@deijose/nix-ionic";
 import { authStore } from "../stores/auth";
 
 export class ProfilePage extends IonPage {
-  constructor(ctx: PageContext) {
-    super(ctx.lc);
-  }
+    constructor(ctx: PageContext) {
+        super(ctx.lc);
+    }
 
-  override render() {
-    const router = useRouter();
-    const routerState = useRouterState();
+    override render() {
+        const router = useRouter();
+        const routerState = useRouterState();
 
-    return html`
+        return html`
       <ion-header>
         <ion-toolbar>
           <ion-title>Profile</ion-title>
@@ -34,7 +34,7 @@ export class ProfilePage extends IonPage {
               @click=${() => {
                 authStore.logout();
                 router.replace("/login");
-              }}
+            }}
             >
               Sign out
             </ion-button>
@@ -42,5 +42,5 @@ export class ProfilePage extends IonPage {
         </ion-card>
       </ion-content>
     `;
-  }
+    }
 }
