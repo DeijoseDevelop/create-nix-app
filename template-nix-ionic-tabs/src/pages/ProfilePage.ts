@@ -1,5 +1,5 @@
 import { html } from "@deijose/nix-js";
-import { IonPage, useRouter, useRouterState } from "@deijose/nix-ionic";
+import { IonPage, nixRouter, nixRouterState } from "@deijose/nix-ionic";
 import type { PageContext } from "@deijose/nix-ionic";
 import { authStore } from "../stores/auth";
 
@@ -9,8 +9,8 @@ export class ProfilePage extends IonPage {
     }
 
     override render() {
-        const router = useRouter();
-        const routerState = useRouterState();
+        const router = nixRouter();
+        const routerState = nixRouterState();
 
         return html`
       <ion-header>
@@ -23,7 +23,7 @@ export class ProfilePage extends IonPage {
         <ion-card>
           <ion-card-header>
             <ion-card-title>Router State Demo</ion-card-title>
-            <ion-card-subtitle>Reactive path and params from useRouterState()</ion-card-subtitle>
+            <ion-card-subtitle>Reactive path and params from nixRouterState()</ion-card-subtitle>
           </ion-card-header>
           <ion-card-content>
             <p><strong>Current path:</strong> ${() => routerState.path.value}</p>

@@ -1,5 +1,5 @@
 import { html } from "@deijose/nix-js";
-import { IonPage, useRouter } from "@deijose/nix-ionic";
+import { IonPage, nixRouter } from "@deijose/nix-ionic";
 import type { PageContext } from "@deijose/nix-ionic";
 
 export class HomePage extends IonPage {
@@ -8,7 +8,7 @@ export class HomePage extends IonPage {
   }
 
   override render() {
-    const router = useRouter();
+    const router = nixRouter();
 
     return html`
       <ion-header>
@@ -16,7 +16,7 @@ export class HomePage extends IonPage {
           <ion-title>Home</ion-title>
         </ion-toolbar>
       </ion-header>
-
+      
       <ion-content class="ion-padding">
         <ion-card>
           <ion-card-header>
@@ -25,8 +25,9 @@ export class HomePage extends IonPage {
           </ion-card-header>
           <ion-card-content>
             <p>This page is protected by <code>beforeEnter</code> and rendered inside Ionic's router outlet.</p>
-            <ion-button expand="block" @click=${() => router.navigate("/map")}>Open Map Tab</ion-button>
-            <ion-button expand="block" fill="outline" @click=${() => router.navigate("/profile")}>Go to Profile Tab</ion-button>
+            <ion-button expand="block" @click=${()=> router.navigate("/map", "root")}>Open Map Tab</ion-button>
+            <ion-button expand="block" fill="outline" @click=${()=> router.navigate("/profile", "root")}>Go to Profile Tab
+            </ion-button>
           </ion-card-content>
         </ion-card>
       </ion-content>

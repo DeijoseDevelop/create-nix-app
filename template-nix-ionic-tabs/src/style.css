@@ -7,15 +7,34 @@
 }
 
 ion-content {
-  --padding-bottom: 84px;
+  --padding-bottom: calc(88px + env(safe-area-inset-bottom));
 }
 
 .app-tab-bar {
+  position: fixed;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: stretch;
+  min-height: 64px;
+  padding-bottom: env(safe-area-inset-bottom);
+
   --background: #ffffff;
-  --color: var(--ion-color-medium);
-  --color-selected: var(--ion-color-primary);
+  --color: #6b7280;
+  --color-selected: #2563eb;
+  --border: 0;
+
   border-top: 1px solid rgba(0, 0, 0, 0.08);
-  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 -4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.app-tab-bar ion-tab-button {
+  min-height: 64px;
+  font-size: 11px;
+  letter-spacing: 0.02em;
+  text-transform: none;
 }
 
 .app-tab-bar ion-tab-button.tab-active {
@@ -23,7 +42,13 @@ ion-content {
 }
 
 .app-tab-bar ion-tab-button ion-icon {
-  font-size: 1.25rem;
+  font-size: 1.2rem;
+  margin-bottom: 2px;
+}
+
+.app-tab-bar ion-tab-button.tab-active ion-icon,
+.app-tab-bar ion-tab-button.tab-active ion-label {
+  color: #2563eb;
 }
 
 .login-page {

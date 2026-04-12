@@ -4,8 +4,8 @@ Complete starter template with:
 
 - `IonRouterOutlet` route definitions and guards
 - `createBottomTabBar()` bottom navigation
-- `useRouter()` navigation actions
-- `useRouterState()` reactive route state
+- `nixRouter()` navigation actions
+- `nixRouterState()` reactive route state
 - `setupNixIonic({ icons })` custom icon registration
 
 ## Quick Start
