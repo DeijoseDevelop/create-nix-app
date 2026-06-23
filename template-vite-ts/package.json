@@ -14,7 +14,7 @@
     },
     "devDependencies": {
         "@deijose/nix-js-testing": "^0.1.3",
-        "@deijose/vite-plugin-nix-js": "^0.2.10",
+        "@deijose/vite-plugin-nix-js": "^0.2.11",
         "happy-dom": "^20.8.3",
         "typescript": "~5.9.3",
         "vite": "^8.0.0",
