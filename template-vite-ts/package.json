@@ -11,6 +11,7 @@
         "@deijose/nix-js": "^2.3.0"
     },
     "devDependencies": {
+        "@deijose/vite-plugin-nix-js": "^0.2.6",
         "typescript": "~5.9.3",
         "vite": "^8.0.0"
     }
