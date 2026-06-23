@@ -10,11 +10,11 @@
         "coverage": "vitest run --coverage"
     },
     "dependencies": {
-        "@deijose/nix-js": "^2.5.1"
+        "@deijose/nix-js": "^2.5.2"
     },
     "devDependencies": {
-        "@deijose/nix-js-testing": "^0.1.1",
-        "@deijose/vite-plugin-nix-js": "^0.2.7",
+        "@deijose/nix-js-testing": "^0.1.2",
+        "@deijose/vite-plugin-nix-js": "^0.2.9",
         "happy-dom": "^20.8.3",
         "typescript": "~5.9.3",
         "vite": "^8.0.0",
